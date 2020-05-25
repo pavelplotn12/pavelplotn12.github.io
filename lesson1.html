@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Паша Плотников</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="red">
+    <header>Сайт  Паши</header>
+    <nav>
+        <a href="">Главная Страница</a>
+        <a href="">Контакты</a>
+        <a href="1.html">Анкета</a>
+    </nav>
+
+    <main>
+    <h1>Имя</h1>
+    Паша
+    <h1>Возраст</h1>
+    10
+    <h1>Школа</h1>
+    N140
+    <h1>Знания языков прагромираврния</h1>
+    <ul>
+        <li>Python</li>
+        <li>Scratch</li>
+        <li>Micropython</li>
+        <li>EV3</li>
+        <li>SmalBasiс</li>
+    </ul>
+    <h1>Мои увлечения</h1>
+    <b>Програмирование,Английский Язык,Игры</b>
+    <h1>Мои любимые игры</h1>
+    <div class="games"> 
+    <section>
+        Minecraft
+        <img src="s12003.jpg">       
+        
+    </section>
+    <section>
+        Brawl Stars
+        <img src="ji-un-ki-.jpg">
+    </section>
+    <section>
+        <font-size></font-size>
+        Fortnite
+        <img src="146367.jpg">
+    </section>
+</div>
+    <h1>Мои любимые животные</h1>
+    <div class="animals"> 
+        <section>
+            собака
+            <img src="s12009.jpg">
+            живёт 10 лет домашнее животное
+        </section>
+        <section>
+            попугай
+            <img src="popugai-kartinka-oboi.orig.jpg">
+            живут 5 лет домашнии животные
+        </section>
+        <section>
+            хомяки
+            <img src="s12004.jpg">
+            Наземные животные; некоторые виды неплохо плавают, набирая в защёчные мешки воздух.
+       </div>
+
+
+
+
+            <h1>Состав моей семьи</h1>
+            <div class="Sema"> 
+                <table>
+            
+            <tr>
+            <th>
+        Кем для меня евляется
+            </th>
+            <th>
+          Имя
+            </th>
+            <th>
+         Возраст
+            </th>
+            </tr>
+           
+
+            <tr>
+            <th>
+            Мама
+            </th>
+            <th>
+            Анна
+            </th>
+            <th>
+            35
+            </th>
+            </tr>
+
+            <tr>
+            <th>
+                Папа
+            </th>
+            <th>
+                Алексей
+            </th>
+            <th>
+                39
+            </th>
+            </tr>
+
+            <tr>
+            <th>
+                Сестра
+            </th>
+            <th>
+                Саша
+            </th>
+            <th>
+                7
+            </th>
+            </tr>
+            </table>
+            </div>
+            <h1>Галерея</h1>
+            <div class='galery'>
+                <div class='slide'>
+                    <img src="1.jfif" alt=''>
+                   
+
+                </div>
+                <div class='slide'>
+                <img src="2.jfif" alt=''>
+                </div>
+                <div class='slide'>
+                <img src="3.jpg" alt=''>
+                </div>
+                <div class='slide'>
+                <img src="4.jpg" alt=''>
+                </div>
+
+                <div class='slide'>
+                <img src="5.jpg" alt=''>
+                </div>
+
+            </div>
+            <script>
+                let number=0;
+                function show_slides(){
+                    var slides=document.getElementsByClassName('slide');
+                    for(i=0;i<slides.length;i++){
+                        slides[i].style.display='none';
+                    }
+                    slides[number].style.display='block';
+                    number++;
+                    if (number>slides.length-1){
+                        number=0;
+                    }
+                    setTimeout(show_slides,1000);
+                    
+
+                }
+                show_slides();
+            </script>
+
+
+
+    </div>
+    <h1>Краткий обзор сайта:</h1>
+Главная страница содержит иформацию обо мне
+<iframe src="lesson1.html" width="100%" height="300px"></iframe>
+Страница 'Анкета' содержит анкету полбзователей
+<br>
+<a href='1.html'>заполнить анкету</a>
+
+<h1>Мои любимые видео</h1>
+<iframe src="https://www.youtube.com/embed/7l7moFy-9Nw" width="70%" frameborder="0" height="400px"></iframe>
+<iframe src="https://www.youtube.com/embed/R6e1HVxZJ4o" frameborder="0" width="70%" frameborder="0" height="400px"></iframe>
+<h1>Красивые города</h1>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.2741189904!2d-118.6919258938714!3d34.020161294243664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2z0JvQvtGBLdCQ0L3QtNC20LXQu9C10YEsINCa0LDQu9C40YTQvtGA0L3QuNGPLCDQodCo0JA!5e0!3m2!1sru!2sru!4v1590399597923!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<img src="s1200-min-2.jpg" alt='' width="50%">
+<br>
+Лос-Анджелес страна	 США
+<br>
+Штат	Калифорния
+<br>
+Округ	Лос-Анджелес
+<br>
+Мэр	Эрик Гарсетти
+<br>
+Основан	4 сентября 1781
+<br>
+Город с	4 апреля 1850
+<br>
+Площадь	1301,97[1] км²
+<br>
+Высота центра	93 м
+<br>
+Население	▲ 3 990 456[2] человека (2018)
+<br>
+Плотность	2913,0 чел./км²
+<br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194348.13981484258!2d-3.819621927910767!3d40.437869757982995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2z0JzQsNC00YDQuNC0LCDQmNGB0L_QsNC90LjRjw!5e0!3m2!1sru!2sru!4v1590399786393!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<img src="b689459d8394b325f329eea78acb33e3.jpg" alt='' width="50%">
+<br>
+Страна	 Испания
+<br>
+Регион	Мадрид
+<br>
+Провинция	Мадрид
+<br>
+Община	Ареа-Метрополитана
+<br>
+Алькальд	Хосе Луис Мартинес-Альмейда
+<br>
+История и география
+<br>
+Первое упоминание	X век
+<br>
+Площадь	607 км²
+<br>
+Высота НУМ	667 м
+<br>
+Население	▲ 3 165 541[1] человека (2016)
+<br>
+Плотность	8653,5 чел./км²
+
+</main>
+    <footer>  2020 Created by Pasha Plotnikov </footer>
+</body>
+</html>

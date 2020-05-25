@@ -1,0 +1,93 @@
+body{
+    background:url(63c24831007073.Y3JvcCwxMzc5LDEwODAsMjQ3LDA.jpg) ;
+    padding-left: 15%; 
+    padding-right: 15%;
+    font-size: 10pt;
+    font-family: italic;
+
+
+
+}
+header{
+    background: url(s12002.jpg);
+    color: rgb(95, 144, 235);
+    font-size: 30pt;
+    
+}
+nav{
+   background-color: aqua;
+   font-style: italic;
+   
+}
+main{
+    background-color: aquamarine;
+    font-style: italic;
+}
+footer{
+    background-color: chartreuse;
+    font-style: italic;
+
+}
+nav a{
+    background-color: tomato;
+    padding-left: 15%; 
+    text-decoration: none;
+    color: mediumvioletred;
+
+}
+nav a:hover{
+    background-color: mediumblue;
+}
+.games section{
+    background-color: azure;
+    padding: 3%;
+    margin: 5%;
+    height: 20vh;
+    border-radius:20px ;
+    border:4px inset peru;
+    border-top: 10px inset orangered;
+    border-bottom-left-radius:50px ;
+    border-bottom-right-radius:50px ;
+}
+.games section img{
+
+    height:100% ;
+}
+
+
+.animals section{
+    background-color: red;
+    width: 25%;
+    float: left;
+    margin-left: 6%;
+    color:royalblue;
+    text-align: left;
+    text-align: center;
+    text-align: right;
+    font-size: 10pt;
+    font-style: italic;
+}
+.animals{
+    height: 30vh;
+}
+.animals section img{
+
+    width:100% ;
+}
+.galery .slide img{
+    width: 100%;
+}
+@media (max-width:500px){
+    body{
+        padding-left:2%;
+        padding-right:2%;
+    }
+    nav{
+        padding: 2px;
+    
+    }
+    nav a{
+        padding: 2px;
+        margin-right: 2px;
+    }
+}
