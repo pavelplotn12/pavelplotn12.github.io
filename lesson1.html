@@ -162,6 +162,33 @@
 
                 }
                 show_slides();
+                function showDate(){
+                new_date=new Date()
+                new_text=document.getElementById('txt')
+                new_text.innerHTML=new_date
+                new_year=new_date.getFullYear()
+                
+                months=["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Ноябрь","Декабрь"]
+                n=new_date.getMonth()
+                new_month=months[n]
+                new_day=new_date.getDate()
+                new_hours=new_date.getHours()
+                new_min=new_date.getMinutes()
+                new_sec=new_date.getSeconds()
+                new_text.innerHTML=' Год:'+ new_year + " Месяц:" + new_month + " День:" + new_day + " Часы:" + new_hours + " Минуты:" + new_min + " Секунды:" + new_sec
+            }
+            function timer(){
+                new_text=document.getElementById('timer')
+                new_date=new Date()
+                new_hours=new_date.getHours()
+                new_min=new_date.getMinutes()
+                new_sec=new_date.getSeconds()
+                new_text.innerHTML=new_hours+":"+new_min+":"+new_sec
+                setTimeout(timer,1);
+            
+
+            }
+            timer()
             </script>
 
 
@@ -227,7 +254,16 @@
 Плотность	8653,5 чел./к
 <h1>Моя любимая музыка</h1>
 <iframe frameborder="0" style="border:none;width:100%;height:180px;" width="100%" height="180" src="https://music.yandex.ru/iframe/#track/18385776/4152177">Слушайте <a href='https://music.yandex.ru/album/4152177/track/18385776'>Freaks</a> — <a href='https://music.yandex.ru/artist/752230'>Timmy Trumpet</a> на Яндекс.Музыке</iframe>
- <iframe frameborder="0" style="border:none;width:100%;height:180px;" width="100%" height="180" src="https://music.yandex.ru/iframe/#track/631623/73889">Слушайте <a href='https://music.yandex.ru/album/73889/track/631623'>Sweet Dreams (Are Made of This)</a> — <a href='https://music.yandex.ru/artist/118895'>Eurythmics</a> на Яндекс.Музыке</iframe>   
+<iframe frameborder="0" style="border:none;width:100%;height:180px;" width="100%" height="180" src="https://music.yandex.ru/iframe/#track/631623/73889">Слушайте <a href='https://music.yandex.ru/album/73889/track/631623'>Sweet Dreams (Are Made of This)</a> — <a href='https://music.yandex.ru/artist/118895'>Eurythmics</a> на Яндекс.Музыке</iframe>   
+<iframe frameborder="0" style="border:none;width:100%;height:180px;" width="100%" height="180" src="https://music.yandex.ru/iframe/#track/64350275/10608320">Слушайте <a href='https://music.yandex.ru/album/10608320/track/64350275'>Toosie Slide</a> — <a href='https://music.yandex.ru/artist/39273'>Drake</a> на Яндекс.Музыке</iframe>   
+ <h1>Моя любимая музыка</h1>
+<iframe frameborder="0" style="border:none;width:100%;height:180px;" width="100%" height="180" src="https://music.yandex.ru/iframe/#track/18385776/4152177">Слушайте <a href='https://music.yandex.ru/album/4152177/track/18385776'>Freaks</a> — <a href='https://music.yandex.ru/artist/752230'>Timmy Trumpet</a> на Яндекс.Музыке</iframe>
+<iframe frameborder="0" style="border:none;width:100%;height:180px;" width="100%" height="180" src="https://music.yandex.ru/iframe/#track/631623/73889">Слушайте <a href='https://music.yandex.ru/album/73889/track/631623'>Sweet Dreams (Are Made of This)</a> — <a href='https://music.yandex.ru/artist/118895'>Eurythmics</a> на Яндекс.Музыке</iframe> 
+<iframe frameborder="0" style="border:none;width:100%;height:180px;" width="100%" height="180" src="https://music.yandex.ru/iframe/#track/64350275/10608320">Слушайте <a href='https://music.yandex.ru/album/10608320/track/64350275'>Toosie Slide</a> — <a href='https://music.yandex.ru/artist/39273'>Drake</a> на Яндекс.Музыке</iframe>
+<h1>Дата и время</h1> 
+<button onclick='showDate()'>Узнать дату и время</button>
+<div id='txt'>здесь появится дата и время</div>
+<div id="timer"></div>   
     </main>
 
     <footer>  2020 Created by Pasha Plotnikov </footer>
